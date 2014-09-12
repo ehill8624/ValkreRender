@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <string-array name="drawer_sections">
+    <item>@string/estimateTitle</item>
+    <item>@string/contactsTitle</item>
+  </string-array>
+  <array name="drawer_sections_icons">
+    <item>@drawable/estimates_white</item>
+    <item>@drawable/contacts_white</item>
+  </array>
+
+  <string-array name="drawer_bottom_sections">
+    <item>@string/feedbackTitle</item>
+    <item>@string/aboutTitle</item>
+    <item>@string/logoutTitle</item>
+  </string-array>
+  <array name="drawer_bottom_sections_icons">
+    <item>@drawable/feedback</item>
+    <item>@drawable/about</item>
+    <item>@drawable/logout</item>
+  </array>
+
+
+  <string-array name="settings_options">
+    <item>@string/passwordManagement</item>
+    <item>@string/profile</item>
+    <item>@string/rates</item>
+    <item>@string/billing</item>
+    <item>@string/addUsers</item>
+  </string-array>
+  <string-array name="password_management_options">
+    <item>@string/newPassword</item>
+    <item>@string/resetPassword</item>
+  </string-array>
+</resources>

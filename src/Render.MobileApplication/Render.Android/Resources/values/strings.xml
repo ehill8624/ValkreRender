@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ApplicationName">PDR Mobile</string>
+	<string name="estimateTitle">Estimates</string>
+	<string name="settingsTitle">Settings</string>
+	<string name="contactsTitle">Contacts</string>
+	<string name="schedulesTitle">Schedules</string>
+	<string name="feedbackTitle">Feedback</string>
+	<string name="aboutTitle">About</string>
+	<string name="logoutTitle">Logout</string>
+
+	<string name="drawer_open">Open</string>
+	<string name="drawer_close">Close</string>
+	<string name="passwordManagement">Password Management</string>
+	<string name="profile">My Profile</string>
+	<string name="rates">Rates</string>
+	<string name="billing">Billing</string>
+	<string name="addUsers">Add Users</string>
+	<string name="newPassword">New Password</string>
+	<string name="resetPassword">Reset Password</string>
+	<string name="action_cancel">Cancel</string>
+	<string name="action_settings">Settings</string>
+	<string name="action_help">Help</string>
+	<string name="action_save">Save</string>
+	<string name="action_delete">Delete</string>
+	 <string-array name="Classification_options">
+        <item>Body Shop</item>
+        <item>Adjustor</item>
+        <item>General</item>
+    </string-array>
+	<string name="action_addContact">+</string>
+</resources>

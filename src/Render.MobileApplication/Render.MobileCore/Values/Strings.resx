@@ -1,0 +1,521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PrimaryMenu_Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="PrimaryMenu_Contacts" xml:space="preserve">
+    <value>Contacts</value>
+  </data>
+  <data name="PrimaryMenu_Estimates" xml:space="preserve">
+    <value>Estimates</value>
+  </data>
+  <data name="PrimaryMenu_Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="PrimaryMenu_Feedback" xml:space="preserve">
+    <value>Feedback</value>
+  </data>
+  <data name="Login_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Login_Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
+
+  <data name="Login_Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Login_ForgotPassword" xml:space="preserve">
+    <value>Forgot Password</value>
+  </data>
+  <data name="Login_CreateNewAccount" xml:space="preserve">
+    <value>Create a New Account</value>
+  </data>
+  <data name="CreateNewAccount_Title" xml:space="preserve">
+    <value>Create Account</value>
+  </data>
+  <data name="Login_Title" xml:space="preserve">
+    <value>Login</value>
+  </data>
+
+  <data name="CreateNewAccount_AcceptTermsAndConditions" xml:space="preserve">
+    <value>I agree to the Terms and Conditions</value>
+  </data>
+  <data name="CreateNewAccount_NameHeader" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="CreateNewAccount_AddressHeader" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="CreateNewAccount_ContactInformationHeader" xml:space="preserve">
+    <value>Contact Information</value>
+  </data>
+  <data name="CreateNewAccount_CellPhone" xml:space="preserve">
+    <value>Cell Phone</value>
+  </data>
+  <data name="CreateNewAccount_City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="CreateNewAccount_CompanyName" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="CreateNewAccount_EmailAddress" xml:space="preserve">
+    <value>Email Address</value>
+  </data>
+  <data name="CreateNewAccount_FirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="CreateNewAccount_LastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="CreateNewAccount_OtherPhone" xml:space="preserve">
+    <value>Other Phone</value>
+  </data>
+  <data name="CreateNewAccount_State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="CreateNewAccount_StreetAddress1" xml:space="preserve">
+    <value>Street Address 1</value>
+  </data>
+  <data name="CreateNewAccount_Zip" xml:space="preserve">
+    <value>Zip</value>
+  </data>
+  <data name="CreateNewAccount_CountryCode" xml:space="preserve">
+    <value>Country Code</value>
+  </data>
+  <data name="CreateNewAccount_Create" xml:space="preserve">
+    <value>Create Account</value>
+  </data>
+  <data name="CreateNewAccount_StreetAddress2" xml:space="preserve">
+    <value>Street Address 2</value>
+  </data>
+  <data name="EditContact_Title_Edit" xml:space="preserve">
+    <value>Edit Contact</value>
+  </data>
+  <data name="EditContact_Title_Add" xml:space="preserve">
+    <value>Add Contact</value>
+  </data>
+  <data name="EditContact_NameHeader" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="EditContact_ClassificationHeader" xml:space="preserve">
+    <value>Classification</value>
+  </data>
+  <data name="EditContact_ContactInformationHeader" xml:space="preserve">
+    <value>Contact Information</value>
+  </data>
+  <data name="EditContact_PrimaryPhone" xml:space="preserve">
+    <value>Primary Phone</value>
+  </data>
+  <data name="EditContact_OtherPhone" xml:space="preserve">
+    <value>Other Phone</value>
+  </data>
+  <data name="EditContact_CompanyName" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="EditContact_EmailAddress" xml:space="preserve">
+    <value>Email Address</value>
+  </data>
+  <data name="EditContact_FirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="EditContact_LastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="EditContact_Classification" xml:space="preserve">
+    <value>Classification</value>
+  </data>
+  <data name="NewPassword_Title" xml:space="preserve">
+    <value>New Password</value>
+  </data>
+  <data name="PaymentMethod_Title" xml:space="preserve">
+    <value>Payment Method</value>
+  </data>
+  <data name="PaymentMethod_CardType" xml:space="preserve">
+    <value>Card Type</value>
+  </data>
+  <data name="PaymentMethod_CardNumber" xml:space="preserve">
+    <value>Card Number</value>
+  </data>
+  <data name="PaymentMethod_ExpirationDate" xml:space="preserve">
+    <value>Expiration Date</value>
+  </data>
+  <data name="PaymentMethod_ExpirationMonth" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="PaymentMethod_ExpirationYear" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="PaymentMethod_SecurityNumber" xml:space="preserve">
+    <value>Security Number</value>
+  </data>
+  <data name="PaymentMethod_Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="ResetPassword_Code" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="ResetPassword_EmailAddress" xml:space="preserve">
+    <value>Email Address</value>
+  </data>
+  <data name="ResetPassword_PhoneNumber" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="ResetPassword_Title" xml:space="preserve">
+    <value>Reset Password</value>
+  </data>
+  <data name="ResetPassword_ResetPassword" xml:space="preserve">
+    <value>Reset Password</value>
+  </data>
+  <data name="Settings_AddNewUser_NewUserEmailAddress" xml:space="preserve">
+    <value>New User Email Address</value>
+  </data>
+  <data name="Settings_AddNewUser_NewUserEmailAddressConfirm" xml:space="preserve">
+    <value>Confirm Email Address</value>
+  </data>
+  <data name="Settings_AddNewUser_AgreeToOwnership" xml:space="preserve">
+    <value>By Confirming, you agree to take ownership of this user</value>
+  </data>
+  <data name="Settings_AddNewUser_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Settings_AddNewUser_Title" xml:space="preserve">
+    <value>Invite Users</value>
+  </data>
+  <data name="Settings_AddUsers" xml:space="preserve">
+    <value>Add Users</value>
+  </data>
+  <data name="Settings_Billing" xml:space="preserve">
+    <value>Billing</value>
+  </data>
+  <data name="Settings_ManageProfile_Title" xml:space="preserve">
+    <value>Manage Profile</value>
+  </data>
+  <data name="Settings_ManageProfile_NameHeader" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Settings_ManageProfile_AddressHeader" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Settings_ManageProfile_ContactInformationHeader" xml:space="preserve">
+    <value>Contact Information</value>
+  </data>
+  <data name="Settings_ManageProfile_CellPhone" xml:space="preserve">
+    <value>Cell Phone</value>
+  </data>
+  <data name="Settings_ManageProfile_City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="Settings_ManageProfile_CompanyName" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="Settings_ManageProfile_EmailAddress" xml:space="preserve">
+    <value>Email Address</value>
+  </data>
+  <data name="Settings_ManageProfile_FirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="Settings_ManageProfile_LastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="Settings_ManageProfile_OtherPhone" xml:space="preserve">
+    <value>Other Phone</value>
+  </data>
+  <data name="Settings_ManageProfile_State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="Settings_ManageProfile_StreetAddress1" xml:space="preserve">
+    <value>Street Address 1</value>
+  </data>
+  <data name="Settings_ManageProfile_Zip" xml:space="preserve">
+    <value>Zip</value>
+  </data>
+  <data name="Settings_ManageProfile_CountryCode" xml:space="preserve">
+    <value>Country Code</value>
+  </data>
+  <data name="Settings_ManageProfile_StreetAddress2" xml:space="preserve">
+    <value>Street Address 2</value>
+  </data>
+  <data name="Settings_MyProfile" xml:space="preserve">
+    <value>My Profile</value>
+  </data>
+  <data name="Settings_PasswordManagement" xml:space="preserve">
+    <value>Password Management</value>
+  </data>
+  <data name="Settings_PasswordManagement_ConfirmPassword" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="Settings_PasswordManagement_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Settings_Rates" xml:space="preserve">
+    <value>Rates</value>
+  </data>
+  <data name="Settings_Title" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="SetAccountType_Title" xml:space="preserve">
+    <value>Account Type</value>
+  </data>
+  <data name="SetAccountType_StartTrial" xml:space="preserve">
+    <value>Start Trial</value>
+  </data>
+  <data name="SetAccountType_EnterPayment" xml:space="preserve">
+    <value>Enter Payment</value>
+  </data>
+  <data name="TemporaryPasswordAlert_Title" xml:space="preserve">
+    <value>Temporary Password</value>
+  </data>
+  <data name="EstimateRates_Title" xml:space="preserve">
+    <value>Rates</value>
+  </data>
+  <data name="Estimates_EstimateList_AddEditPhoto" xml:space="preserve">
+    <value>Add Photo</value>
+  </data>
+  <data name="Estimates_PhotoGallery" xml:space="preserve">
+    <value>Gallery</value>
+  </data>
+  <data name="EstimatesMenu_Title" xml:space="preserve">
+    <value>Estimates Home</value>
+  </data>
+  <data name="EstimatesMenu_CurrentTotal" xml:space="preserve">
+    <value>CURRENT TOTAL</value>
+  </data>
+  <data name="EstimatesMenu_Contacts" xml:space="preserve">
+    <value>Contacts</value>
+  </data>
+  <data name="EstimatesMenu_Vehicle" xml:space="preserve">
+    <value>Vehicle</value>
+  </data>
+  <data name="EstimatesMenu_RatesAndTaxes" xml:space="preserve">
+    <value>Rates/Taxes</value>
+  </data>
+  <data name="EstimatesMenu_Photos" xml:space="preserve">
+    <value>Photos</value>
+  </data>
+  <data name="EstimatesMenu_Operations" xml:space="preserve">
+    <value>PDR</value>
+  </data>
+  <data name="EstimatesMenu_Assignment" xml:space="preserve">
+    <value>Assignment</value>
+  </data>
+  <data name="EstimatesMenu_LockEstimate" xml:space="preserve">
+    <value>Lock Estimate</value>
+  </data>
+  <data name="EstimatesMenu_Insurance" xml:space="preserve">
+    <value>Insurance</value>
+  </data>
+  <data name="EstimatesMenu_Notes" xml:space="preserve">
+    <value>NOTES</value>
+  </data>
+  <data name="EstimatesMenu_EmailEstimate" xml:space="preserve">
+    <value>EMAIL</value>
+  </data>
+  <data name="Settings_ManageRates_Title" xml:space="preserve">
+    <value>Rates</value>
+  </data>
+  <data name="Settings_ManageRates_DefaultMatrix" xml:space="preserve">
+    <value>Default Matrix</value>
+  </data>
+  <data name="Settings_ManageRates_DefaultLaborRate" xml:space="preserve">
+    <value>Default Labor Rate</value>
+  </data>
+  <data name="Settings_ManageRates_DefaultTaxRate" xml:space="preserve">
+    <value>Default Tax Rate</value>
+  </data>
+  <data name="Settings_ManageRates_TaxLabor" xml:space="preserve">
+    <value>Tax Labor</value>
+  </data>
+  <data name="Settings_ManageRates_VehicleType" xml:space="preserve">
+    <value>Vehicle Type</value>
+  </data>
+  <data name="ContactList_Title" xml:space="preserve">
+    <value>Contacts</value>
+  </data>
+  <data name="ContactSearch_Title" xml:space="preserve">
+    <value>Contact Search</value>
+  </data>
+  <data name="CreateNewContact_Title" xml:space="preserve">
+    <value>New Contact</value>
+  </data>
+  <data name="ScanVin_Title" xml:space="preserve">
+    <value>Scan Vehicle VIN</value>
+  </data>
+  <data name="EstimateList_Title" xml:space="preserve">
+    <value>Estimates</value>
+  </data>
+  <data name="EstimateList_ScanVin" xml:space="preserve">
+    <value>Scan Vin</value>
+  </data>
+  <data name="VehicleType_Title" xml:space="preserve">
+    <value>Choose Vehicle Type</value>
+  </data>
+  <data name="VehicleFillet_Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PanelDetail_Title" xml:space="preserve">
+    <value>Choose Panel Detail</value>
+  </data>
+  <data name="NewPassword_ConfirmPassword" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="NewPassword_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="NewPassword_SetNewPassword" xml:space="preserve">
+    <value>Set New Password</value>
+  </data>
+  <data name="NewPassword_StartTrial" xml:space="preserve">
+    <value>Start Trial</value>
+  </data>
+  <data name="NewPassword_CreateFullAccount" xml:space="preserve">
+    <value>Start Using Application</value>
+  </data>
+  <data name="AddEditVehicle_Color" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="AddEditVehicle_JobNumber" xml:space="preserve">
+    <value>Job #</value>
+  </data>
+  <data name="AddEditVehicle_Make" xml:space="preserve">
+    <value>Make</value>
+  </data>
+  <data name="AddEditVehicle_Model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="AddEditVehicle_Plate" xml:space="preserve">
+    <value>Plate</value>
+  </data>
+  <data name="AddEditVehicle_Stock" xml:space="preserve">
+    <value>Stock</value>
+  </data>
+  <data name="AddEditVehicle_ScanVin" xml:space="preserve">
+    <value>Scan Vin</value>
+  </data>
+  <data name="AddEditVehicle_Stock" xml:space="preserve">
+    <value>Stock</value>
+  </data>
+  <data name="AddEditVehicle_Vin" xml:space="preserve">
+    <value>VIN</value>
+  </data>
+  <data name="AddEditVehicle_Year" xml:space="preserve">
+    <value>Year</value>
+  </data>
+</root>

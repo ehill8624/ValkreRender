@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/ActivitySpacing"
+    android:animateLayoutChanges="true"
+    android:background="@color/app_light_gray">
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Login_loading"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:indeterminate="true"
+        android:indeterminateBehavior="cycle"
+        android:indeterminateOnly="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/ElementSpacing"
+        android:visibility="gone"
+        android:paddingLeft="@dimen/ActivitySpacingNegative"
+        android:paddingRight="@dimen/ActivitySpacingNegative" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/login_logo_container"
+        android:background="@color/Render_orange_color"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp">
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Login_pdrLogo"
+            android:paddingTop="@dimen/ActivitySpacing"
+            android:layout_gravity="center|center_vertical" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="@dimen/ActivitySpacing"
+        android:paddingLeft="@dimen/ActivitySpacing"
+        android:paddingRight="@dimen/ActivitySpacing"
+        android:paddingTop="@dimen/ActivitySpacing"
+        android:animateLayoutChanges="true"
+        android:layout_below="@+id/login_logo_container"
+        android:background="@color/app_light_gray">
+        <EditText
+            android:inputType="textEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_logo_container"
+            android:id="@+id/Login_username"
+            android:layout_marginBottom="@dimen/ElementSpacing"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:hint="Username" />
+        <EditText
+            android:inputType="textPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Login_username"
+            android:id="@+id/Login_password"
+            android:layout_marginBottom="@dimen/ElementSpacing"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:hint="Password" />
+        <Button
+            android:text="Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Login_password"
+            android:id="@+id/Login_login"
+            android:layout_marginBottom="@dimen/ElementSpacing"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:enabled="false"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+        <TextView
+            android:text="Forgot Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Login_login"
+            android:id="@+id/Login_forgotPassword"
+            android:layout_marginBottom="@dimen/ElementSpacing"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center" />
+        <TextView
+            android:text="Create New Account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Login_forgotPassword"
+            android:id="@+id/Login_createNewAccount"
+            android:layout_marginBottom="@dimen/ElementSpacing"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center" />
+    </RelativeLayout>
+</RelativeLayout>
