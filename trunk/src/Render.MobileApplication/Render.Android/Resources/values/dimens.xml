@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <dimen name="LargeText">22sp</dimen>
+  <dimen name="MediumText">18sp</dimen>
+  <dimen name="SmallText">14sp</dimen>
+  <dimen name="MicroText">12sp</dimen>
+
+  <dimen name="HeaderPadding">3dp</dimen>
+
+  <dimen name="ExpandableListViewHeaderPadding">36dp</dimen>
+  <dimen name="LargePadding">12dp</dimen>
+  <dimen name="MediumPadding">8dp</dimen>
+  <dimen name="SmallPadding">4dp</dimen>
+  <dimen name="MicroPadding">2dp</dimen>
+
+  <dimen name="ElementSpacing">8dp</dimen>
+  <dimen name="ActivitySpacing">16dp</dimen>
+  <dimen name="ActivitySpacingNegative">-16dp</dimen>
+
+  <dimen name="ListItemIndent">10dp</dimen>
+
+  <dimen name="drawer_width">240dp</dimen>
+  <dimen name="drawer_item_padding">16dp</dimen>
+
+  <dimen name="min_cell_hight">70dp</dimen>
+
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MessageBarLib</name>
+    </assembly>
+    <members>
+        <member name="M:MessageBar.IStyleSheetProvider.StyleSheetForMessageView(MessageBar.MessageView)">
+            <summary>
+            Stylesheet for message view.
+            </summary>
+            <returns>The style sheet for message view.</returns>
+            <param name="messageView">Message view.</param>
+        </member>
+        <member name="P:MessageBar.MessageBarManager.StyleSheet">
+            <summary>
+            Gets or sets the style sheet.
+            </summary>
+            <value>The style sheet.</value>
+        </member>
+        <member name="M:MessageBar.MessageBarManager.ShowMessage(System.String,System.String,MessageBar.MessageType)">
+            <summary>
+            Shows the message
+            </summary>
+            <param name="title">Messagebar title</param>
+            <param name="description">Messagebar description</param>
+            <param name="type">Message type</param>
+        </member>
+        <member name="M:MessageBar.MessageBarManager.ShowMessage(System.String,System.String,MessageBar.MessageType,System.Action)">
+            <summary>
+            Shows the message
+            </summary>
+            <param name="title">Messagebar title</param>
+            <param name="description">Messagebar description</param>
+            <param name="type">Message type</param>
+            <param name="onDismiss">OnDismiss callback</param>
+        </member>
+        <member name="M:MessageBar.MessageBarManager.HideAll">
+            <summary>
+            Hides all messages
+            </summary>
+        </member>
+        <member name="T:MessageBar.MessageType">
+            <summary>
+            Message types
+            </summary>
+        </member>
+        <member name="M:MessageBar.MessageBarStyleSheet.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:MessageBar.MessageBarStyleSheet" /> class.
+            </summary>
+        </member>
+        <member name="M:MessageBar.MessageBarStyleSheet.BackgroundColorForMessageType(MessageBar.MessageType)">
+            <summary>
+            Provides the background colour for message type
+            </summary>
+            <returns>The background colour for message type.</returns>
+            <param name="type">Message type</param>
+        </member>
+        <member name="M:MessageBar.MessageBarStyleSheet.StrokeColorForMessageType(MessageBar.MessageType)">
+            <summary>
+            Provides the stroke colour for message type
+            </summary>
+            <returns>The stroke colour for message type.</returns>
+            <param name="type">Message type</param>
+        </member>
+        <member name="M:MessageBar.MessageBarStyleSheet.IconImageForMessageType(MessageBar.MessageType)">
+            <summary>
+            Provides the icon for message type
+            </summary>
+            <returns>The icon for message type.</returns>
+            <param name="type">Message type</param>
+        </member>
+    </members>
+</doc>

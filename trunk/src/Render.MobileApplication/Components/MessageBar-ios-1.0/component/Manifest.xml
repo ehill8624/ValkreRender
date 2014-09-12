@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<component format="1" id="MessageBar-ios">
+  <name>MessageBar</name>
+  <publisher>Prashant C</publisher>
+  <publisher-url>https://github.com/prashantvc/Xamarin.iOS-MessageBar</publisher-url>
+  <version>1.0</version>
+  <summary>System-wide dropdown messages for iOS</summary>
+  <samples>
+    <sample id="MessageBar">
+      <name>iOS Sample.</name>
+      <summary>Demonstrates the MessageBar on Xamarin.iOS</summary>
+    </sample>
+  </samples>
+</component>

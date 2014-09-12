@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Render_orange_color">#f39f31</color>
+	<color name="Render_dim_orange_color">#ffe99427</color>
+</resources>

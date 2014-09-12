@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4FB0452C-5CCE-4A86-BD9D-C79E96CE1E27}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PDRMobile.Droid</RootNamespace>
+    <AssemblyName>Render.Android</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <TargetFrameworkVersion>v4.0.3</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Refractored.Xam.Settings">
+      <HintPath>..\packages\Xam.Plugins.Settings.1.3.0.0\lib\MonoAndroid10\Refractored.Xam.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="Refractored.Xam.Settings.Abstractions">
+      <HintPath>..\packages\Xam.Plugins.Settings.1.3.0.0\lib\MonoAndroid10\Refractored.Xam.Settings.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>..\packages\Rx-Interfaces.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Core">
+      <HintPath>..\packages\Rx-Core.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+      <HintPath>..\packages\Rx-Linq.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices">
+      <HintPath>..\packages\Rx-PlatformServices.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCL.raw">
+      <HintPath>..\packages\SQLitePCL.raw_basic.0.5.0\lib\MonoAndroid\SQLitePCL.raw.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXing.Net.Mobile">
+      <HintPath>..\libs\Android\ZXing.Net.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.monoandroid">
+      <HintPath>..\libs\Android\zxing.monoandroid.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveUI">
+      <HintPath>..\packages\reactiveui-core.6.0.6\lib\Monoandroid\ReactiveUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Akavache">
+      <HintPath>..\packages\akavache.core.4.0.3.2\lib\MonoAndroid\Akavache.dll</HintPath>
+    </Reference>
+    <Reference Include="Akavache.Sqlite3">
+      <HintPath>..\packages\akavache.sqlite3.4.0.3.2\lib\Portable-Net45+Win8+WP8+Wpa81\Akavache.Sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog">
+      <HintPath>..\packages\Serilog.1.4.8\lib\portable-net45+win8+wp8\Serilog.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.5\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.1.4.3\lib\monoandroid\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android" />
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\Components\xamandroidsupportv4-18-20.0.0.3\lib\android\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activities\ActivityBase.cs" />
+    <Compile Include="Activities\Login.cs" />
+    <Compile Include="Activities\SplashScreen.cs" />
+    <Compile Include="App.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="Helpers\DrawerToggle.cs" />
+    <Compile Include="Fragments\FragmentBase.cs" />
+    <Compile Include="Adapters\AdapterBase.cs" />
+    <Compile Include="Activities\IFragmentBaseActivity.cs" />
+    <Compile Include="DrawingImageView.cs" />
+    <Compile Include="AkavacheSqliteLinkerOverride.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\layout\SplashScreen.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Login.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable-xhdpi\drawer_shadow_dark.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\drawer_shadow_light.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_navigation_drawer_dark.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_navigation_drawer_light.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\drawer_shadow_dark.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\drawer_shadow_light.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_navigation_drawer_dark.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_navigation_drawer_light.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\drawer_shadow_dark.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\drawer_shadow_light.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_navigation_drawer_dark.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_navigation_drawer_light.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\drawer_shadow_dark.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\drawer_shadow_light.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_navigation_drawer_dark.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_navigation_drawer_light.png" />
+    <AndroidResource Include="Resources\values\arrays.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\values\attrs.xml" />
+    <AndroidResource Include="Resources\menu\main_activity_actions.xml" />
+    <AndroidResource Include="Resources\menu\settings_password_menu.xml" />
+    <AndroidResource Include="Resources\menu\settings_profile_menu.xml" />
+    <None Include="Properties\_SettingsStarted.txt" />
+    <AndroidResource Include="Resources\drawable\logo.png" />
+    <AndroidResource Include="Resources\menu\login_options_menu.xml" />
+    <AndroidResource Include="Resources\menu\settings_options_menu.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\splash.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\splash.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\splash.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\splash.png" />
+    <AndroidResource Include="Resources\menu\esimate_list_menu.xml" />
+    <AndroidResource Include="Resources\drawable\contacts.png" />
+    <AndroidResource Include="Resources\drawable\vehicle.png" />
+    <AndroidResource Include="Resources\drawable\photos.png" />
+    <AndroidResource Include="Resources\drawable\lock_estimate.png" />
+    <AndroidResource Include="Resources\drawable\email.png" />
+    <AndroidResource Include="Resources\drawable\assignments.png" />
+    <AndroidResource Include="Resources\drawable\ACTUALSIZE_PDR_Icon_FILLET_143x239.png" />
+    <AndroidResource Include="Resources\drawable\rates.png" />
+    <AndroidResource Include="Resources\drawable\ACTUALSIZE_PDR_SCANVIN.png" />
+    <AndroidResource Include="Resources\menu\estimate_newContact_menu.xml" />
+    <AndroidResource Include="Resources\menu\estimate_addons_menu.xml" />
+    <AndroidResource Include="Resources\menu\estimate_contactList_menu.xml" />
+    <AndroidResource Include="Resources\drawable\image_edit_draw.png" />
+    <AndroidResource Include="Resources\drawable\invoices.png" />
+    <AndroidResource Include="Resources\drawable\fillet.png" />
+    <AndroidResource Include="Resources\drawable\plus.png" />
+    <AndroidResource Include="Resources\drawable\projects.png" />
+    <AndroidResource Include="Resources\drawable\schedule.png" />
+    <AndroidResource Include="Resources\drawable\splash_logo.png" />
+    <AndroidResource Include="Resources\drawable\settings.png" />
+    <AndroidResource Include="Resources\menu\estimate_photos_menu.xml" />
+    <AndroidResource Include="Resources\menu\estimate_photo_edit_menu.xml" />
+    <AndroidResource Include="Resources\drawable\logout.png" />
+    <AndroidResource Include="Resources\drawable\save.png" />
+    <AndroidResource Include="Resources\drawable\locked_estimate.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\about.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\accounting.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\accounting_white.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\assignments.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\pdrlogo.png" />
+    <AndroidResource Include="Resources\drawable\image_edit_dent.png" />
+    <AndroidResource Include="Resources\drawable\image_edit_hail.png" />
+    <AndroidResource Include="Resources\drawable\image_edit_scratch.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\logo.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\vehicle.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\vehicle.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\contacts.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\contacts_white.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\estimate_locked.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\lock_estimate.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\logo.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\rates.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\vehicle.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\photos.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\email.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\notes.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ACTUALSIZE_PDR_SCANVIN.png" />
+    <AndroidResource Include="Resources\drawable\delete.png" />
+    <AndroidResource Include="Resources\values\styles_rendermobile.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\AndroidManifest.xml" />
+    <AndroidResource Include="Resources\drawable\pdrlogo.png" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\values\generic_colors.xml" />
+    <AndroidResource Include="Resources\values\app_colors.xml" />
+    <AndroidResource Include="Resources\values\colors_pdrmobile.xml" />
+    <AndroidResource Include="Resources\values\dimens_pdrmobile.xml" />
+    <AndroidResource Include="Resources\values\themes_pdrmobile.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_launcher_pdrmobilelogo.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\ic_launcher_pdrmobilelogo.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_launcher_pdrmobilelogo.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_launcher_pdrmobilelogo.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ab_bottom_solid_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ab_solid_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ab_stacked_solid_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ab_texture_tile_pdrmobile.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ab_transparent_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_cab_done_default_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_cab_done_focused_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\btn_cab_done_pressed_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\cab_background_bottom_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\cab_background_top_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\list_focused_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\list_pressed_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\menu_dropdown_panel_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\progress_bg_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\progress_primary_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\progress_secondary_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\spinner_ab_default_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\spinner_ab_disabled_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\spinner_ab_focused_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\spinner_ab_pressed_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\tab_selected_focused_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\tab_selected_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\tab_selected_pressed_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\tab_unselected_focused_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\tab_unselected_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\tab_unselected_pressed_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ab_bottom_solid_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ab_solid_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ab_stacked_solid_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ab_texture_tile_pdrmobile.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ab_transparent_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_cab_done_default_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_cab_done_focused_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\btn_cab_done_pressed_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\cab_background_bottom_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\cab_background_top_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\list_focused_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\list_pressed_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\menu_dropdown_panel_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\progress_bg_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\progress_primary_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\progress_secondary_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\spinner_ab_default_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\spinner_ab_disabled_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\spinner_ab_focused_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\spinner_ab_pressed_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\tab_selected_focused_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\tab_selected_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\tab_selected_pressed_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\tab_unselected_focused_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\tab_unselected_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\tab_unselected_pressed_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ab_bottom_solid_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ab_solid_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ab_stacked_solid_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ab_texture_tile_pdrmobile.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ab_transparent_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_cab_done_default_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_cab_done_focused_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\btn_cab_done_pressed_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\cab_background_bottom_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\cab_background_top_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\list_focused_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\list_pressed_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\menu_dropdown_panel_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\progress_bg_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\progress_primary_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\progress_secondary_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\spinner_ab_default_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\spinner_ab_disabled_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\spinner_ab_focused_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\spinner_ab_pressed_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tab_selected_focused_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tab_selected_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tab_selected_pressed_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tab_unselected_focused_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tab_unselected_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\tab_unselected_pressed_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ab_bottom_solid_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ab_solid_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ab_stacked_solid_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ab_texture_tile_pdrmobile.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ab_transparent_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btn_cab_done_default_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btn_cab_done_focused_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\btn_cab_done_pressed_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\cab_background_bottom_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\cab_background_top_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\list_focused_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\list_pressed_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\menu_dropdown_panel_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\progress_bg_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\progress_primary_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\progress_secondary_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\spinner_ab_default_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\spinner_ab_disabled_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\spinner_ab_focused_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\spinner_ab_pressed_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\tab_selected_focused_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\tab_selected_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\tab_selected_pressed_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\tab_unselected_focused_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\tab_unselected_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\tab_unselected_pressed_pdrmobile.9.png" />
+    <AndroidResource Include="Resources\values\colors_pdrmobile_orange.xml" />
+    <AndroidResource Include="Resources\values\colors_pdrmobile_darkgray.xml" />
+    <AndroidResource Include="Resources\drawable\notes.png" />
+    <AndroidResource Include="Resources\drawable\exclamation.png" />
+    <AndroidResource Include="Resources\drawable\estimates.png" />
+    <AndroidResource Include="Resources\drawable\accounting.png" />
+    <AndroidResource Include="Resources\drawable\about.png" />
+    <AndroidResource Include="Resources\drawable\contacts_white.png" />
+    <AndroidResource Include="Resources\drawable\estimates_white.png" />
+    <AndroidResource Include="Resources\drawable\feedback.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <LinkDescription Include="FixLinking.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Render.API.Client\Render.API.Client.csproj">
+      <Project>{09F21F29-AD7B-4E9B-9995-89F31FB8229C}</Project>
+      <Name>Render.API.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Render.MobileCore\Render.MobileCore.csproj">
+      <Project>{8D36226C-2E2D-47B7-AAED-D9A8600D7E52}</Project>
+      <Name>Render.MobileCore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="xamandroidsupportv4-18">
+      <Version>20.0.0.3</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+</Project>

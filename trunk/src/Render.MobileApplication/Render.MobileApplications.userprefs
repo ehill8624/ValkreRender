@@ -1,0 +1,39 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.MonoForAndroid_API_15" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Render.Android\Activities\Login.cs">
+    <Files>
+      <File FileName="Render.Android\Resources\AboutResources.txt" Line="19" Column="19" />
+      <File FileName="Render.Android\Activities\Login.cs" Line="27" Column="27" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Render.Android" expanded="True" selected="True">
+            <Node name="Activities" expanded="True" />
+            <Node name="Adapters" expanded="True" />
+            <Node name="Assets" expanded="True" />
+            <Node name="Fragments" expanded="True" />
+            <Node name="Helpers" expanded="True" />
+            <Node name="Properties" expanded="True" />
+            <Node name="Resources" expanded="True">
+              <Node name="menu" expanded="True" />
+              <Node name="values" expanded="True" />
+            </Node>
+          </Node>
+          <Node name="Render.MobileCore" expanded="True">
+            <Node name="ViewModels" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="E:\EightBot_Projects\PDRMobile\PDRMobile.MobileCore\ViewModels\Login.cs" line="62" column="1" />
+      <Breakpoint file="E:\EightBot_Projects\PDRMobile\PDRMobile.Droid\Fragments\Contacts.cs" line="49" column="1" />
+      <Breakpoint file="E:\EightBot_Projects\PDRMobile\PDRMobile.Droid\Fragments\EstimateRatesTaxes.cs" line="91" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Render.Android MonoForAntroid.PreferredDevice="Nexus 4" />
+</Properties>

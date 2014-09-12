@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<linker>
+  <assembly fullname="System">
+    <type fullname="System.ComponentModel.StringConverter">
+      <method name=".ctor" />
+    </type>
+    <type fullname="System.ComponentModel.BooleanConverter">
+      <method name=".ctor" />
+    </type>
+  </assembly>
+</linker>

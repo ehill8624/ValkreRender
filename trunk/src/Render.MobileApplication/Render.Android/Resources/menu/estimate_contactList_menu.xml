@@ -1,0 +1,5 @@
+﻿<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/action_addContact"
+		android:showAsAction="ifRoom|withText"
+		android:title="@string/action_addContact"/>
+</menu>
