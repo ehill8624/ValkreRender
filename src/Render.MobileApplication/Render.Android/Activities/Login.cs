@@ -16,6 +16,7 @@ using ReactiveUI;
 
 using Splat;
 
+
 namespace Render.Android.Activities
 {
 	[Activity]
@@ -40,7 +41,7 @@ namespace Render.Android.Activities
 
         protected override void SetupUserInterface()
         {
-            //SetContentView(Resource.Layout.Login);
+			SetContentView(Resource.Layout.Login);
         }
 
         protected override void BindControls()
