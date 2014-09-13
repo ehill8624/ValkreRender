@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{3A44E273-B621-41DB-B3D1-64065C39732D}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Render.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <NuGetPackageImportStamp>20034fd4</NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchUseSGen>True</MtouchUseSGen>
+    <MtouchUseRefCounting>True</MtouchUseRefCounting>
+    <MtouchOptimizePNGs>True</MtouchOptimizePNGs>
+    <MtouchI18n>
+    </MtouchI18n>
+    <AssemblyName>RenderMobileiOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <AssemblyName>RenderMobileiOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>True</MtouchDebug>
+    <CodesignKey>iPhone Developer: Michael Stonis (R52XGKRU6T)</CodesignKey>
+    <MtouchArch>ARMv7</MtouchArch>
+    <MtouchUseSGen>True</MtouchUseSGen>
+    <MtouchUseRefCounting>True</MtouchUseRefCounting>
+    <MtouchOptimizePNGs>True</MtouchOptimizePNGs>
+    <MtouchI18n>
+    </MtouchI18n>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchLink>None</MtouchLink>
+    <AssemblyName>PDRMobileiOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <AssemblyName>PDRMobileiOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution: Michael Stonis (35V95A4C8S)</CodesignKey>
+    <BuildIpa>True</BuildIpa>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
+    <CodesignProvision>e8e81a38-ee33-42bc-a0b0-4bda5856aa1a</CodesignProvision>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <DefineConstants>ADHOC</DefineConstants>
+    <AssemblyName>PDRMobileiOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <AssemblyName>PDRMobileiOS</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Constants\Layout.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="ViewControllers\Login.cs" />
+    <Compile Include="ViewControllers\SplashScreen.cs" />
+    <Compile Include="ViewControllers\ViewControllerBase.cs" />
+    <Compile Include="Views\JVFloatLabeledTextField.cs" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <ITunesArtwork Include="iTunesArtwork" />
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+    <None Include="packages.config" />
+    <Compile Include="Views\AutoLayoutScrollView.cs" />
+    <Compile Include="Views\KeyboardSpacingView.cs" />
+    <Compile Include="Extensions\UIViewControllerExtensions.cs" />
+    <Compile Include="ViewControllers\TableViewControllerBase.cs" />
+    <Compile Include="Extensions\UIButtonExtensions.cs" />
+    <Compile Include="ViewControllers\CollectionViewControllerBase.cs" />
+    <Compile Include="Views\SmoothDrawView.cs" />
+    <Compile Include="Views\ImageOverlayView.cs" />
+    <Compile Include="Extensions\UIViewExtensions.cs" />
+    <Compile Include="Views\UIPickerViewModelBase.cs" />
+    <Compile Include="Views\UIPickerViewToolbar.cs" />
+    <Compile Include="Views\DisclosureTextField.cs" />
+    <Compile Include="Views\FlatButton.cs" />
+    <Compile Include="Extensions\ViewExtensions.cs" />
+    <Compile Include="AkavacheSqliteLinkerOverride.cs" />
+    <Compile Include="Constants\Animation.cs" />
+    <Compile Include="Views\UIPickerViewT.cs" />
+    <Compile Include="ViewControllers\SuperNavigationController.cs" />
+    <Compile Include="RenderMessageBarStyleSheet.cs" />
+    <Compile Include="ViewControllers\PrimaryNavigationMenu.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Cirrious.FluentLayouts.Touch">
+      <HintPath>..\libs\Cirrious.FluentLayouts.Touch.dll</HintPath>
+    </Reference>
+    <Reference Include="Refractored.Xam.Settings">
+      <HintPath>..\packages\Xam.Plugins.Settings.1.3.0.0\lib\MonoTouch10\Refractored.Xam.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="Refractored.Xam.Settings.Abstractions">
+      <HintPath>..\packages\Xam.Plugins.Settings.1.3.0.0\lib\MonoTouch10\Refractored.Xam.Settings.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="MonoTouch.Dialog-1" />
+    <Reference Include="FlyoutNavigation">
+      <HintPath>..\libs\FlyoutNavigation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>..\packages\Rx-Interfaces.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Core">
+      <HintPath>..\packages\Rx-Core.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+      <HintPath>..\packages\Rx-Linq.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices">
+      <HintPath>..\packages\Rx-PlatformServices.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLitePCL.raw">
+      <HintPath>..\packages\SQLitePCL.raw_basic.0.5.0\lib\MonoTouch\SQLitePCL.raw.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveUI">
+      <HintPath>..\packages\reactiveui-core.6.0.6\lib\Monotouch\ReactiveUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Akavache">
+      <HintPath>..\packages\akavache.core.4.0.3.2\lib\MonoTouch\Akavache.dll</HintPath>
+    </Reference>
+    <Reference Include="Akavache.Sqlite3">
+      <HintPath>..\packages\akavache.sqlite3.4.0.3.2\lib\Portable-Net45+Win8+WP8+Wpa81\Akavache.Sqlite3.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.monotouch">
+      <HintPath>..\packages\ZXing.Net.Mobile.1.4.6\lib\MonoTouch\zxing.monotouch.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXing.Net.Mobile">
+      <HintPath>..\packages\ZXing.Net.Mobile.1.4.6\lib\MonoTouch\ZXing.Net.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="MessageBarLib">
+      <HintPath>..\libs\MessageBarLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.AsyncEx">
+      <HintPath>..\packages\Nito.AsyncEx.3.0.0\lib\MonoTouch\Nito.AsyncEx.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.AsyncEx.Concurrent">
+      <HintPath>..\packages\Nito.AsyncEx.3.0.0\lib\MonoTouch\Nito.AsyncEx.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.AsyncEx.Enlightenment">
+      <HintPath>..\packages\Nito.AsyncEx.3.0.0\lib\MonoTouch\Nito.AsyncEx.Enlightenment.dll</HintPath>
+    </Reference>
+    <Reference Include="EightBot.SwipeCell">
+      <HintPath>..\libs\EightBot.SwipeCell.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.5\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog">
+      <HintPath>..\packages\Serilog.1.4.8\lib\portable-net45+win8+wp8\Serilog.dll</HintPath>
+    </Reference>
+    <Reference Include="Humanizer">
+      <HintPath>..\packages\Humanizer.1.29.0\lib\portable-win+net40+sl50+wp8+wpa81\Humanizer.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.1.4.3\lib\monotouch\Splat.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon.png" />
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="Resources\hamburger_menu%402x.png" />
+    <BundleResource Include="Resources\hamburger_menu.png" />
+    <BundleResource Include="Resources\exit.png" />
+    <BundleResource Include="Resources\exit%402x.png" />
+    <BundleResource Include="Resources\camera.png" />
+    <BundleResource Include="Resources\camera%402x.png" />
+    <BundleResource Include="Resources\plus.png" />
+    <BundleResource Include="Resources\plus%402x.png" />
+    <BundleResource Include="Resources\pdr_filter.png" />
+    <BundleResource Include="Resources\pdr_filter%402x.png" />
+    <BundleResource Include="Resources\about.png" />
+    <BundleResource Include="Resources\about%402x.png" />
+    <BundleResource Include="Resources\accept.png" />
+    <BundleResource Include="Resources\accept%402x.png" />
+    <BundleResource Include="Resources\accounting.png" />
+    <BundleResource Include="Resources\accounting%402x.png" />
+    <BundleResource Include="Resources\assignments.png" />
+    <BundleResource Include="Resources\assignments%402x.png" />
+    <BundleResource Include="Resources\boxedlogo.png" />
+    <BundleResource Include="Resources\boxedlogo%402x.png" />
+    <BundleResource Include="Resources\boxed_logo.png" />
+    <BundleResource Include="Resources\boxed_logo%402x.png" />
+    <BundleResource Include="Resources\large_boxed_logo.png" />
+    <BundleResource Include="Resources\large_boxed_logo%402x.png" />
+    <BundleResource Include="Resources\contacts.png" />
+    <BundleResource Include="Resources\contacts%402x.png" />
+    <BundleResource Include="Resources\email.png" />
+    <BundleResource Include="Resources\email%402x.png" />
+    <BundleResource Include="Resources\estimates.png" />
+    <BundleResource Include="Resources\estimates%402x.png" />
+    <BundleResource Include="Resources\exclamation.png" />
+    <BundleResource Include="Resources\exclamation%402x.png" />
+    <BundleResource Include="Resources\feedback.png" />
+    <BundleResource Include="Resources\feedback%402x.png" />
+    <BundleResource Include="Resources\invoices.png" />
+    <BundleResource Include="Resources\invoices%402x.png" />
+    <BundleResource Include="Resources\lock_estimate.png" />
+    <BundleResource Include="Resources\lock_estimate%402x.png" />
+    <BundleResource Include="Resources\logout.png" />
+    <BundleResource Include="Resources\logout%402x.png" />
+    <BundleResource Include="Resources\notes.png" />
+    <BundleResource Include="Resources\notes%402x.png" />
+    <BundleResource Include="Resources\fillet.png" />
+    <BundleResource Include="Resources\fillet%402x.png" />
+    <BundleResource Include="Resources\nav_logo.png" />
+    <BundleResource Include="Resources\nav_logo%402x.png" />
+    <BundleResource Include="Resources\photos.png" />
+    <BundleResource Include="Resources\photos%402x.png" />
+    <BundleResource Include="Resources\projects.png" />
+    <BundleResource Include="Resources\projects%402x.png" />
+    <BundleResource Include="Resources\quotes.png" />
+    <BundleResource Include="Resources\quotes%402x.png" />
+    <BundleResource Include="Resources\rates.png" />
+    <BundleResource Include="Resources\rates%402x.png" />
+    <BundleResource Include="Resources\reject.png" />
+    <BundleResource Include="Resources\reject%402x.png" />
+    <BundleResource Include="Resources\save.png" />
+    <BundleResource Include="Resources\save%402x.png" />
+    <BundleResource Include="Resources\schedule.png" />
+    <BundleResource Include="Resources\schedule%402x.png" />
+    <BundleResource Include="Resources\settings.png" />
+    <BundleResource Include="Resources\settings%402x.png" />
+    <BundleResource Include="Resources\splash_logo.png" />
+    <BundleResource Include="Resources\splash_logo%402x.png" />
+    <BundleResource Include="Resources\vehicle.png" />
+    <BundleResource Include="Resources\vehicle%402x.png" />
+    <BundleResource Include="Resources\contacts_white.png" />
+    <BundleResource Include="Resources\contacts_white%402x.png" />
+    <BundleResource Include="Resources\image_edit_dent.png" />
+    <BundleResource Include="Resources\image_edit_dent%402x.png" />
+    <BundleResource Include="Resources\image_edit_scratch.png" />
+    <BundleResource Include="Resources\image_edit_scratch%402x.png" />
+    <BundleResource Include="Resources\image_edit_hail.png" />
+    <BundleResource Include="Resources\image_edit_hail%402x.png" />
+    <BundleResource Include="Resources\snapphoto.png" />
+    <BundleResource Include="Resources\snapphoto%402x.png" />
+    <BundleResource Include="Resources\image_edit_draw.png" />
+    <BundleResource Include="Resources\image_edit_draw%402x.png" />
+    <BundleResource Include="Resources\estimates_white.png" />
+    <BundleResource Include="Resources\estimates_white%402x.png" />
+    <BundleResource Include="Resources\settings_white.png" />
+    <BundleResource Include="Resources\settings_white%402x.png" />
+    <BundleResource Include="Resources\image_edit_dent_small.png" />
+    <BundleResource Include="Resources\image_edit_dent_small%402x.png" />
+    <BundleResource Include="Resources\image_edit_hail_small.png" />
+    <BundleResource Include="Resources\image_edit_hail_small%402x.png" />
+    <BundleResource Include="Resources\image_edit_scratch_small.png" />
+    <BundleResource Include="Resources\image_edit_scratch_small%402x.png" />
+    <BundleResource Include="Resources\estimate_unlocked.png" />
+    <BundleResource Include="Resources\estimate_unlocked%402x.png" />
+    <BundleResource Include="Resources\estimate_locked.png" />
+    <BundleResource Include="Resources\estimate_locked%402x.png" />
+    <BundleResource Include="Resources\barcode.png" />
+    <BundleResource Include="Resources\barcode%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\logo%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-Small%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-Small-40%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon-60%402x.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Render.MobileCore\Render.MobileCore.csproj">
+      <Project>{8D36226C-2E2D-47B7-AAED-D9A8600D7E52}</Project>
+      <Name>Render.MobileCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Render.API.Client\Render.API.Client.csproj">
+      <Project>{09F21F29-AD7B-4E9B-9995-89F31FB8229C}</Project>
+      <Name>Render.API.Client</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CollectionViewCells\" />
+    <Folder Include="CollectionViewSectionInformation\" />
+    <Folder Include="CollectionViewSources\" />
+    <Folder Include="TableViewCells\" />
+    <Folder Include="TableViews\" />
+    <Folder Include="TableViewSectionInformation\" />
+    <Folder Include="TableViewSources\" />
+  </ItemGroup>
+</Project>

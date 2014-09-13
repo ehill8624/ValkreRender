@@ -27,10 +27,10 @@
         android:layout_width="fill_parent"
         android:layout_height="150dp">
         <ImageView
-            android:src="@drawable/logo"
+            android:src="@drawable/logout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/Login_pdrLogo"
+            android:id="@+id/logout"
             android:paddingTop="@dimen/ActivitySpacing"
             android:layout_gravity="center|center_vertical" />
     </LinearLayout>
@@ -76,25 +76,5 @@
             android:enabled="false"
             android:textColor="@color/white"
             android:textStyle="bold" />
-        <TextView
-            android:text="Forgot Password"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/Login_login"
-            android:id="@+id/Login_forgotPassword"
-            android:layout_marginBottom="@dimen/ElementSpacing"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
-            android:gravity="center" />
-        <TextView
-            android:text="Create New Account"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/Login_forgotPassword"
-            android:id="@+id/Login_createNewAccount"
-            android:layout_marginBottom="@dimen/ElementSpacing"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
-            android:gravity="center" />
     </RelativeLayout>
 </RelativeLayout>

@@ -1,31 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.MonoForAndroid_API_15" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Render.Android\Activities\Login.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Render.iOS/Utilities.cs">
     <Files>
-      <File FileName="Render.Android\Resources\AboutResources.txt" Line="19" Column="19" />
-      <File FileName="Render.Android\Activities\Login.cs" Line="27" Column="27" />
+      <File FileName="Render.iOS/AppDelegate.cs" Line="62" Column="62" />
+      <File FileName="Render.iOS/RenderMessageBarStyleSheet.cs" Line="41" Column="41" />
+      <File FileName="Render.iOS/Utilities.cs" Line="34" Column="34" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="Render.Android" expanded="True" selected="True">
-            <Node name="Activities" expanded="True" />
-            <Node name="Adapters" expanded="True" />
-            <Node name="Assets" expanded="True" />
-            <Node name="Fragments" expanded="True" />
-            <Node name="Helpers" expanded="True" />
-            <Node name="Properties" expanded="True" />
-            <Node name="Resources" expanded="True">
-              <Node name="menu" expanded="True" />
-              <Node name="values" expanded="True" />
-            </Node>
-          </Node>
-          <Node name="Render.MobileCore" expanded="True">
-            <Node name="ViewModels" expanded="True" />
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>

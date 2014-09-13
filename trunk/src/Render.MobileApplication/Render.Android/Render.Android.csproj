@@ -7,7 +7,7 @@
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PDRMobile.Droid</RootNamespace>
+    <RootNamespace>Render.Android</RootNamespace>
     <AssemblyName>Render.Android</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidApplication>true</AndroidApplication>
@@ -136,19 +136,13 @@
     <AndroidResource Include="Resources\values\arrays.xml" />
     <AndroidResource Include="Resources\values\colors.xml" />
     <AndroidResource Include="Resources\values\attrs.xml" />
-    <AndroidResource Include="Resources\menu\main_activity_actions.xml" />
-    <AndroidResource Include="Resources\menu\settings_password_menu.xml" />
-    <AndroidResource Include="Resources\menu\settings_profile_menu.xml" />
     <None Include="Properties\_SettingsStarted.txt" />
     <AndroidResource Include="Resources\drawable\logo.png" />
-    <AndroidResource Include="Resources\menu\login_options_menu.xml" />
-    <AndroidResource Include="Resources\menu\settings_options_menu.xml" />
     <AndroidResource Include="Resources\values\styles.xml" />
     <AndroidResource Include="Resources\drawable-hdpi\splash.png" />
     <AndroidResource Include="Resources\drawable-ldpi\splash.png" />
     <AndroidResource Include="Resources\drawable-mdpi\splash.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\splash.png" />
-    <AndroidResource Include="Resources\menu\esimate_list_menu.xml" />
     <AndroidResource Include="Resources\drawable\contacts.png" />
     <AndroidResource Include="Resources\drawable\vehicle.png" />
     <AndroidResource Include="Resources\drawable\photos.png" />
@@ -158,9 +152,6 @@
     <AndroidResource Include="Resources\drawable\ACTUALSIZE_PDR_Icon_FILLET_143x239.png" />
     <AndroidResource Include="Resources\drawable\rates.png" />
     <AndroidResource Include="Resources\drawable\ACTUALSIZE_PDR_SCANVIN.png" />
-    <AndroidResource Include="Resources\menu\estimate_newContact_menu.xml" />
-    <AndroidResource Include="Resources\menu\estimate_addons_menu.xml" />
-    <AndroidResource Include="Resources\menu\estimate_contactList_menu.xml" />
     <AndroidResource Include="Resources\drawable\image_edit_draw.png" />
     <AndroidResource Include="Resources\drawable\invoices.png" />
     <AndroidResource Include="Resources\drawable\fillet.png" />
@@ -169,8 +160,6 @@
     <AndroidResource Include="Resources\drawable\schedule.png" />
     <AndroidResource Include="Resources\drawable\splash_logo.png" />
     <AndroidResource Include="Resources\drawable\settings.png" />
-    <AndroidResource Include="Resources\menu\estimate_photos_menu.xml" />
-    <AndroidResource Include="Resources\menu\estimate_photo_edit_menu.xml" />
     <AndroidResource Include="Resources\drawable\logout.png" />
     <AndroidResource Include="Resources\drawable\save.png" />
     <AndroidResource Include="Resources\drawable\locked_estimate.png" />
@@ -361,5 +350,8 @@
       <Version>20.0.0.3</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\menu\" />
   </ItemGroup>
 </Project>
