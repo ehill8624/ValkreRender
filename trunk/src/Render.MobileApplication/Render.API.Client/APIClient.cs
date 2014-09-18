@@ -7,6 +7,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using PDRMobile.API.Client.APIModels;
 
 namespace Render.API.Client
 {
@@ -347,5 +348,35 @@ namespace Render.API.Client
                 this.Client.Dispose();
             }
         }
+
+
+		public async Task<IList<AuthenticationResult>> authenticate(string username, string password, 
+			CancellationToken cancellationToken = default(CancellationToken))
+		{
+
+			AuthenticationModel _model = new AuthenticationModel ();
+			_model.Password = password;
+			_model.Username = username;
+
+			string jsonStr =  JsonConvert.SerializeObject (_model); //await Task.Factory.StartNew (() => JsonConvert.SerializeObject (_model), cancellationToken).ConfigureAwait (false);
+			var _content = new StringContent(jsonStr, Encoding.UTF8, "application/json");
+
+			var result = await ExecutePostAsync<IList<AuthenticationResult>>("authenticate", _content, cancellationToken).ConfigureAwait(false);
+
+			return result.Result;
+		}
+
+		public async Task<bool> getactivity(AuthenticationResult auth,CancellationToken cancellationToken = default(CancellationToken))
+		{
+			this.Client.DefaultRequestHeaders.Add ("account-name", auth.AccountName);
+			this.Client.DefaultRequestHeaders.Add ("token", auth.Token);
+
+			this.Client.DefaultRequestHeaders.Authorization = 
+				new AuthenticationHeaderValue("token", auth.Token);
+
+			var result = await ExecuteGetAsync<bool> ("activity", cancellationToken);
+
+			return true;
+		}
     }
 }

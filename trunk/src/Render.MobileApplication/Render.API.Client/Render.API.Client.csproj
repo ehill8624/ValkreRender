@@ -41,6 +41,8 @@
     <Compile Include="APIClient.cs" />
     <Compile Include="ClientException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="APIModels\AuthenticationModel.cs" />
+    <Compile Include="APIModels\AuthenticationResult.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Net.Http.Primitives">
@@ -67,4 +69,7 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <Folder Include="APIModels\" />
+  </ItemGroup>
 </Project>
